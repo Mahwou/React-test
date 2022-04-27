@@ -11,7 +11,7 @@ class Student extends Component {
                     <p className='card-text'>Email: {this.props.email}</p>
                     <p className='card-text'>Company: {this.props.company}</p>
                     <p className='card-text'>skill: {this.props.skill}</p>
-                    <p className='card-text'>Average: {this.props.average}</p>
+                    <p className='card-text'>Average: {this.props.average}%</p>
                 </div>
                 
             </div>
