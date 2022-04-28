@@ -16,7 +16,7 @@ class Student extends Component {
                         <ul className='list-style'>
                             <li>Email: {this.props.email}</li>
                             <li>Company: {this.props.company}</li>
-                            <li>skill: {this.props.skill}</li>
+                            <li>Skill: {this.props.skill}</li>
                             <li>Average: {this.props.average}%</li>
                         </ul>
                     </div>
