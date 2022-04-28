@@ -7,15 +7,15 @@ import Student from '../students/student';
 
 const http = new HttpServices();
 
-class App extends Component{
+class App extends Component {
 
-  
+
   constructor(props) {
     super(props);
-    this.state = {students:[]};
+    this.state = { students: [] };
 
     // Bind functions
-    
+
     this.studentList = this.studentList.bind(this);
     this.studentList();
   }
@@ -28,19 +28,19 @@ class App extends Component{
   loadData = () => {
     var self = this;
     http.getStudent().then(data => {
-      self.setState({students: data.students});
+      self.setState({ students: data.students });
       console.log(data);
-    }, err =>{
+    }, err => {
 
     });
   }
 
   studentList = () => {
     const list = this.state.students.map((student) =>
-      <div key={student._id}>
-        <Student pic = {student.pic}  firstName = {student.firstName} lastName= {student.lastName} 
-        email= {student.email} company= {student.company} skill= {student.skill} 
-        average = {student.grades.reduce((sum, curr) => sum + Number(curr), 0) /student.grades.length} />
+      <div key={student.id}>
+        <Student pic={student.pic} firstName={student.firstName} lastName={student.lastName}
+          email={student.email} company={student.company} skill={student.skill}
+          average={student.grades.reduce((sum, curr) => sum + Number(curr), 0) / student.grades.length} />
       </div>
     );
     return (list);
@@ -49,13 +49,18 @@ class App extends Component{
   render() {
     return (
       <div className="App">
-        <div className='App-main'>
-          {this.studentList()}
+        <div >
+          <div className='App-main'>
+            <div className='App-Card'>
+            {this.studentList()}
+            </div>
+          </div>
         </div>
+
       </div>
     );
   }
-  
+
 }
 
 export default App;

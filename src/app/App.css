@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  margin: 0px;
 }
 
 .App-logo {
@@ -7,9 +8,20 @@
   pointer-events: none;
 }
 
+.App-Card {
+  border-radius: 10px;
+  border: 1px solid rgb(165, 162, 162);
+  height: 440px;
+  background-color: white;
+  overflow: auto;
+  box-shadow: 2px 1px 2px 1px  rgb(174, 176, 177);;
+}
+
 .App-main {
-  text-align: left;
-  margin-left: 10px;
+  margin: 0px;
+  padding: 100px 300px 100px 300px;
+  background-color: rgb(214, 208, 208);
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
