@@ -13,8 +13,22 @@
   border: 1px solid rgb(165, 162, 162);
   height: 425px;
   background-color: white;
-  overflow: auto;
-  box-shadow: 2px 1px 2px 1px  rgb(174, 176, 177);;
+  overflow-x: hidden;
+  box-shadow: 2px 1px 2px 1px  rgb(174, 176, 177);
+}
+
+.search {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(231, 229, 229);
+  width: 100%;
+  font-family: Georgia;
+  margin: 10px 15px;
+}
+
+.search:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(26, 25, 25);
 }
 
 .App-main {

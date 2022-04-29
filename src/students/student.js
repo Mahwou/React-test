@@ -5,7 +5,6 @@ class Student extends Component {
     render() {
         return (
             <div className='container card'>
-
                 <div className='card-block'>
                     <div className='img block'>
                     <img className='card-img-top' src={this.props.pic} alt='Student Image' height={100} width={100}></img>
