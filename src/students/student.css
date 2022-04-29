@@ -47,3 +47,24 @@
     margin: 0px;
     text-transform: uppercase;
 }
+
+.row {
+    padding-left: 150px;
+    margin-top: 0px;
+}
+.col {
+    float: right;
+}
+
+.test {
+    position: relative;
+}
+
+.test1 {
+    display: inline-block;
+}
+
+.next {
+    margin-left: 30px;
+}
+

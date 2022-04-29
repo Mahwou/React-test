@@ -53,7 +53,9 @@ class App extends Component {
       return <div key={student.id}>
         <Student pic={student.pic} firstName={student.firstName} lastName={student.lastName}
           email={student.email} company={student.company} skill={student.skill}
-          average={student.grades.reduce((sum, curr) => sum + Number(curr), 0) / student.grades.length} />
+          average={student.grades.reduce((sum, curr) => sum + Number(curr), 0) / student.grades.length}
+          grades = {student.grades}
+          index = {student.grades.indexOf()} />
       </div>
     });
     return (list);
