@@ -4,6 +4,7 @@
   background-color: #ffff;
   border: 1px solid rgb(177, 174, 174);
   border-radius: 6px;
+  box-shadow: 2px 1px 2px 1px  rgb(174, 176, 177);
   overflow: auto;
   
 }
@@ -49,6 +50,10 @@ body {
   display: inline !important;
   color: black;
   border-radius: 10%;
+}
+
+.list {
+  margin-left: 15px;
 }
 
 span {
