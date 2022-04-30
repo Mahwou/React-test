@@ -57,7 +57,7 @@ const StudentComponent = ({ student, onShow, onSubmit }: PropType) => {
 
 
           <form onSubmit={_onSubmit}>
-            <input placeholder="new tag"  {...tag} className="AppInputTag list" />
+            <input placeholder="new tag"  {...tag} className="AppInputTag list search" />
           </form>
 
         </div>

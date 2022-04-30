@@ -62,8 +62,8 @@ export default function App() {
 
       <div className="App container AppScrool pt-3 my-3">
         <div className = "AppInputSearch">
-          <input className="AppInput py-2" placeholder="Search by name" {...name} />
-          <input className="AppInput py-2" placeholder="Search by tag"  {...tag} />
+          <input className="AppInput py-2 search" placeholder="Search by name" {...name} />
+          <input className="AppInput py-2 search" placeholder="Search by tag"  {...tag} />
         </div>
 
         {
